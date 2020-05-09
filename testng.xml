@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="testng.metrics.report.logo" value = "https://static.javatpoint.com/tutorial/testng/images/testng-tutorial.png"/>
+  <parameter name="testng.metrics.report.name" value = "TestNG-Metrics.html"/>
+  <parameter name="testng.metrics.report.appendTimestamp" value = "False"/>
+  
+  <test thread-count="2" name="Test">
+    <classes>
+      <class name="Tests.GoogleSearch"/>
+       <class name="Tests.PageActions"/>
+       <class name="Tests.DummyTest"/>
+    </classes>
+  </test> 
+</suite> 
