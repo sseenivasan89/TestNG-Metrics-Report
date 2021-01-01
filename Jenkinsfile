@@ -6,8 +6,9 @@ pipeline {
         stage('Check Tool Version') {
           steps {
             sh '''java -version
-mvn -v
-git --version'''
+mvn --version
+git --version
+'''
           }
         }
 
