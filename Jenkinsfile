@@ -5,9 +5,7 @@ pipeline {
       parallel {
         stage('Check Tool Version') {
           steps {
-            sh '''java -version
-
-'''
+            bat 'mvn -v'
           }
         }
 
